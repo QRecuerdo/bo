@@ -73,6 +73,13 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+.middle-image {
+    width: 70%;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
+
 .btn {
     display: inline-block;
     background-color: #f44336;
