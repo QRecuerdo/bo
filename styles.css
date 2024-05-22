@@ -3,6 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 .container {
@@ -25,7 +27,12 @@ nav {
 }
 
 .logo {
-    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
 }
 
 nav ul {
@@ -40,6 +47,11 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Estilos del área de inicio */
@@ -74,5 +86,61 @@ nav ul li a {
     background-color: #d32f2f;
 }
 
-/* Estilos de los demás secciones, footer, etc. */
+/* Estilos de las secciones */
+section {
+    padding: 60px 0;
+}
 
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Estilos del formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
