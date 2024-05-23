@@ -28,7 +28,7 @@ nav {
 }
 
 .logo img {
-    height: 50px;
+    height: 80px; /* Tamaño del logo ajustado */
 }
 
 nav ul {
@@ -83,7 +83,6 @@ video {
 
 .intro-text {
     z-index: 1;
-    background: rgba(0, 0, 0, 0.5);
     display: inline-block;
     padding: 20px;
     border-radius: 10px;
@@ -102,15 +101,17 @@ video {
 
 .btn {
     display: inline-block;
-    background-color: #f44336;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Color transparente */
+    color: #000;
+    padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .btn:hover {
-    background-color: #d32f2f;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 /* Estilos de las secciones */
@@ -140,17 +141,21 @@ footer p {
 /* Media queries para dispositivos móviles */
 @media (max-width: 768px) {
     #inicio h1 {
-        font-size: 24px;
+        font-size: 32px;
     }
 
     #inicio p {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .intro-text {
         padding: 15px;
         width: 90%;
-        margin-top: 10%;
+    }
+
+    .btn {
+        font-size: 20px;
+        padding: 10px 20px;
     }
 
     header {
