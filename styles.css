@@ -87,10 +87,6 @@ video {
     display: inline-block;
     padding: 20px;
     border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
 }
 
@@ -129,41 +125,6 @@ h2 {
     color: #333;
 }
 
-/* Estilos del formulario de contacto */
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: auto;
-}
-
-form label {
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-form input, form textarea {
-    margin-bottom: 20px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-form button:hover {
-    background-color: #555;
-}
-
 /* Estilos del pie de página */
 footer {
     background-color: #333;
@@ -188,5 +149,13 @@ footer p {
 
     .intro-text {
         padding: 15px;
+    }
+
+    header {
+        padding: 5px 0;
+    }
+
+    nav ul li {
+        margin-right: 10px;
     }
 }
