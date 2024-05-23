@@ -168,14 +168,17 @@ footer p {
     padding: 60px 20px;
     border-top: 1px solid #ccc; /* Línea de separación más suave */
     display: flex;
+    flex-wrap: wrap; /* Permitir el ajuste en dispositivos móviles */
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 #contacto h2 {
     margin-bottom: 20px;
     font-size: 28px; /* Tamaño de fuente reducido */
     color: #333; /* Color de texto oscuro */
+    width: 100%; /* Asegurar que el título tome todo el ancho en móviles */
+    text-align: center;
 }
 
 .contact-content {
@@ -184,11 +187,12 @@ footer p {
     justify-content: space-between;
     width: 100%;
     max-width: 1200px;
+    flex-wrap: wrap; /* Ajustar el contenido en dispositivos móviles */
 }
 
 .contact-details {
-    margin-right: 40px;
     flex: 1;
+    margin-right: 40px;
 }
 
 .contact-details p {
@@ -198,7 +202,7 @@ footer p {
 }
 
 .contact-details i {
-    color: #007BFF; /* Color de íconos azul */
+    color: #cce4ff; /* Color de íconos azul */
     margin-right: 10px;
 }
 
@@ -242,49 +246,13 @@ footer p {
 
 /* Media queries para dispositivos móviles */
 @media (max-width: 768px) {
-    .logo-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo img {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    .btn-compra {
-        margin-left: 0;
-    }
-
-    #inicio h1 {
-        font-size: 32px;
-    }
-
-    #inicio p {
-        font-size: 18px;
-    }
-
-    .intro-text {
-        padding: 15px;
-        width: 90%;
-    }
-
-    .btn {
-        font-size: 20px;
-        padding: 10px 20px;
-    }
-
-    header {
-        padding: 5px 0;
-    }
-
-    nav ul li {
-        margin-right: 10px;
-    }
-
     #contacto {
         flex-direction: column;
         text-align: center;
+    }
+
+    .contact-details, .contact-image {
+        margin-bottom: 20px;
     }
 
     .contact-content {
@@ -294,11 +262,6 @@ footer p {
 
     .contact-details {
         margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .contact-image {
-        max-width: 100%;
     }
 
     #contacto h2 {
