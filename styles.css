@@ -87,6 +87,11 @@ video {
     display: inline-block;
     padding: 20px;
     border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 #inicio h1 {
@@ -183,10 +188,5 @@ footer p {
 
     .intro-text {
         padding: 15px;
-        margin-top: 10%;
-    }
-
-    video {
-        object-fit: fill;
     }
 }
