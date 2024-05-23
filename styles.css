@@ -161,7 +161,6 @@ footer p {
 #contacto {
     background-color: #e0f7fa; /* Fondo más claro */
     padding: 60px 20px;
-    text-align: left;
     border-top: 1px solid #ccc; /* Línea de separación más suave */
     display: flex;
     align-items: center;
