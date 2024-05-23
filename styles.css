@@ -28,14 +28,35 @@ nav {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
     height: 120px; /* Tamaño del logo ajustado */
     margin-left: 20px; /* Espacio al lado del logo */
 }
 
+.btn-compra {
+    background-color: #4CAF50; /* Color diferente para el botón de compra */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 20px; /* Espacio al lado del logo */
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-compra:hover {
+    background-color: rgba(76, 175, 80, 0.7);
+}
+
 nav ul {
     list-style: none;
     display: flex;
+    margin-left: auto; /* Mueve la lista de navegación hacia la derecha */
 }
 
 nav ul li {
