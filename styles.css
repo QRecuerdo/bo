@@ -27,6 +27,11 @@ nav {
     align-items: center;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
     height: 80px; /* Tamaño del logo ajustado */
     margin-left: 20px; /* Espacio al lado del logo */
@@ -237,6 +242,46 @@ footer p {
 
 /* Media queries para dispositivos móviles */
 @media (max-width: 768px) {
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .btn-compra {
+        margin-left: 0;
+    }
+
+    #inicio h1 {
+        font-size: 32px;
+    }
+
+    #inicio p {
+        font-size: 18px;
+    }
+
+    .intro-text {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .btn {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    header {
+        padding: 5px 0;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
     #contacto {
         flex-direction: column;
         text-align: center;
