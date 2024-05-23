@@ -140,15 +140,17 @@ footer p {
 /* Media queries para dispositivos móviles */
 @media (max-width: 768px) {
     #inicio h1 {
-        font-size: 32px;
+        font-size: 24px;
     }
 
     #inicio p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .intro-text {
         padding: 15px;
+        width: 90%;
+        margin-top: 10%;
     }
 
     header {
