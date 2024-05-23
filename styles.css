@@ -29,6 +29,7 @@ nav {
 
 .logo img {
     height: 80px; /* Tamaño del logo ajustado */
+    margin-left: 20px; /* Espacio al lado del logo */
 }
 
 nav ul {
