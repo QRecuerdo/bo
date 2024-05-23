@@ -185,4 +185,8 @@ footer p {
         padding: 15px;
         margin-top: 10%;
     }
+
+    video {
+        object-fit: fill;
+    }
 }
