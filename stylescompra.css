@@ -88,6 +88,15 @@ header h1 {
     background-color: #218838;
 }
 
+/* Estilos de la imagen conmovedora */
+.conmovedora {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Estilos del pie de página */
 footer {
     background-color: #333;
