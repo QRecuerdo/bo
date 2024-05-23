@@ -32,6 +32,21 @@ nav {
     margin-left: 20px; /* Espacio al lado del logo */
 }
 
+.btn-compra {
+    background-color: #28a745; /* Color verde llamativo */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 20px; /* Espacio al lado del logo */
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-compra:hover {
+    background-color: #218838; /* Color verde oscuro al pasar el mouse */
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -142,8 +157,68 @@ footer p {
     margin: 0;
 }
 
+/* Estilos de la sección de contacto */
+#contacto {
+    background-color: #007BFF; /* Fondo azul llamativo */
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+#contacto h2 {
+    margin-bottom: 40px;
+    font-size: 28px; /* Tamaño de fuente reducido */
+    color: #fff; /* Color de texto blanco */
+}
+
+.contact-details {
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    font-size: 16px; /* Tamaño de fuente reducido */
+    color: #fff; /* Color de texto blanco */
+    margin: 10px 0;
+}
+
+.contact-details i {
+    color: #FFD700; /* Color de íconos dorado */
+    margin-right: 10px;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media p {
+    margin-bottom: 10px;
+    color: #fff; /* Color de texto blanco */
+}
+
+.social-icon {
+    display: inline-block;
+    background-color: #fff; /* Fondo blanco para los íconos */
+    color: #007BFF; /* Color del ícono azul */
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    border-radius: 50%;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #FFD700; /* Fondo dorado al pasar el mouse */
+    color: #fff; /* Color del ícono blanco al pasar el mouse */
+}
+
 /* Media queries para dispositivos móviles */
 @media (max-width: 768px) {
+    .logo img {
+        height: 80px; /* Tamaño del logo ajustado para móviles */
+    }
+
     #inicio h1 {
         font-size: 32px;
     }
@@ -168,5 +243,19 @@ footer p {
 
     nav ul li {
         margin-right: 10px;
+    }
+
+    #contacto h2 {
+        font-size: 24px; /* Ajuste de tamaño de fuente para móviles */
+    }
+
+    .contact-details p {
+        font-size: 14px; /* Ajuste de tamaño de fuente para móviles */
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
     }
 }
