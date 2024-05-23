@@ -32,18 +32,14 @@ nav {
     height: 80px; /* Tamaño del logo ajustado */
 }
 
-.menu-icon {
+.menu-button {
     display: none;
-    flex-direction: column;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
     cursor: pointer;
-}
-
-.menu-icon div {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 4px;
-    transition: 0.4s;
 }
 
 nav ul {
@@ -226,8 +222,8 @@ footer p {
 
 /* Media queries para dispositivos móviles */
 @media (max-width: 768px) {
-    .menu-icon {
-        display: flex;
+    .menu-button {
+        display: block;
     }
 
     nav ul {
@@ -235,7 +231,7 @@ footer p {
     }
 
     nav .menu {
-        display: flex;
+        display: none;
     }
 
     #inicio h1 {
