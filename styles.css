@@ -159,30 +159,42 @@ footer p {
 
 /* Estilos de la sección de contacto */
 #contacto {
-    background-color: #007BFF; /* Fondo azul llamativo */
+    background-color: #e0f7fa; /* Fondo más claro */
     padding: 60px 20px;
-    text-align: center;
-    border-top: 1px solid #e0e0e0;
+    text-align: left;
+    border-top: 1px solid #ccc; /* Línea de separación más suave */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #contacto h2 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 28px; /* Tamaño de fuente reducido */
-    color: #fff; /* Color de texto blanco */
+    color: #333; /* Color de texto oscuro */
+}
+
+.contact-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .contact-details {
-    margin-bottom: 20px;
+    margin-right: 40px;
+    flex: 1;
 }
 
 .contact-details p {
     font-size: 16px; /* Tamaño de fuente reducido */
-    color: #fff; /* Color de texto blanco */
+    color: #333; /* Color de texto oscuro */
     margin: 10px 0;
 }
 
 .contact-details i {
-    color: #FFD700; /* Color de íconos dorado */
+    color: #007BFF; /* Color de íconos azul */
     margin-right: 10px;
 }
 
@@ -192,13 +204,13 @@ footer p {
 
 .social-media p {
     margin-bottom: 10px;
-    color: #fff; /* Color de texto blanco */
+    color: #333; /* Color de texto oscuro */
 }
 
 .social-icon {
     display: inline-block;
-    background-color: #fff; /* Fondo blanco para los íconos */
-    color: #007BFF; /* Color del ícono azul */
+    background-color: #007BFF; /* Fondo azul para los íconos */
+    color: #fff; /* Color del ícono blanco */
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -209,40 +221,40 @@ footer p {
 }
 
 .social-icon:hover {
-    background-color: #FFD700; /* Fondo dorado al pasar el mouse */
+    background-color: #0056b3; /* Fondo azul oscuro al pasar el mouse */
     color: #fff; /* Color del ícono blanco al pasar el mouse */
+}
+
+.contact-image {
+    flex: 1;
+    max-width: 500px;
+    text-align: center;
+}
+
+.contact-image img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 /* Media queries para dispositivos móviles */
 @media (max-width: 768px) {
-    .logo img {
-        height: 80px; /* Tamaño del logo ajustado para móviles */
+    #contacto {
+        flex-direction: column;
+        text-align: center;
     }
 
-    #inicio h1 {
-        font-size: 32px;
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
     }
 
-    #inicio p {
-        font-size: 18px;
+    .contact-details {
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
-    .intro-text {
-        padding: 15px;
-        width: 90%;
-    }
-
-    .btn {
-        font-size: 20px;
-        padding: 10px 20px;
-    }
-
-    header {
-        padding: 5px 0;
-    }
-
-    nav ul li {
-        margin-right: 10px;
+    .contact-image {
+        max-width: 100%;
     }
 
     #contacto h2 {
