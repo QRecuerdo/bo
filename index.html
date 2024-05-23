@@ -12,7 +12,12 @@
             <div class="logo">
                 <img src="logo.png" alt="Logo QRecuerdo" height="80">
             </div>
-            <ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
@@ -29,7 +34,8 @@
             </video>
             <div class="intro-text">
                 <h1>Bienvenido a QRecuerdo</h1>
-                <p>Escanea y conecta con los recuerdos eternos de tus seres queridos🕊</p>
+                <p> Escanea y conecta con los recuerdos eternos de tus seres queridos🕊</p>
+                
             </div>
         </div>
     </section>
@@ -84,5 +90,12 @@
             <p>&copy; 2024 QRecuerdo. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
